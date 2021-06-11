@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@app.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalculatorController">
+    <top>
+        <Label fx:id="display" minHeight="60.0" text="0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></Label>
+    </top>
+    <bottom>
+      <Label styleClass="footer" text="no rights reserved 2021" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="7" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="4" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="1" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleNumberEntered" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#handleOperatorEntered" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="√" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="x²" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="C" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="&lt;-" GridPane.columnIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="+/-" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="1/x" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="sin" />
+            <Button mnemonicParsing="false" onAction="#handleOperatorEntered" text="cos" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </center>
+
+</BorderPane>

@@ -1,0 +1,27 @@
+.button {
+    -fx-pref-width: 75px;
+    -fx-pref-height: 75px;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    -fx-border-style: none;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0px;
+    -fx-border-color: none;
+}
+.label{
+    -fx-alignment: center-right;
+    -fx-content-display: right;
+    -fx-pref-width: 300px;
+    -fx-min-width: 300px;
+    -fx-font-size: 18;
+    -fx-min-height: 50px;
+    -fx-pref-height: 50px;
+    -fx-background-color: lightblue;
+    -fx-padding: 0 10 0 0;
+}
+.footer {
+    -fx-min-height: 25px;
+    -fx-pref-height: 25px;
+    -fx-font-size: 8;
+    -fx-font-weight: normal;
+}
